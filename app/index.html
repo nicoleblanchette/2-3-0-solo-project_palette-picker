@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <script type="module" src="./src/main.js" defer></script>
+    <title>Colorful Palettes</title>
+  </head>
+  <body>
+    <h1>Colorful Palettes</h1>
+    <main>
+      <form>
+        <h2>Craft a Palette!</h2>
+
+        <div class="field">
+          <label for="palette-title">Palette Title:</label>
+          <input id="palette-title" type="text" name="paletteTitle" placeholder="Get creative!">
+        </div>
+
+        <fieldset>
+          <legend>Select your colors:</legend>
+
+        <div class="field">
+          <label for="color1">Color 1:</label>
+          <input id="color1" type="color" value="#bada55" name="color1">
+        </div>
+
+        <div class="field">
+          <label for="color2">Color 2:</label>
+          <input id="color2" type="color" value="#bada55" name="color2">
+        </div>
+
+        <div class="field">
+          <label for="color3">Color 3:</label>
+          <input id="color3" type="color" value="#bada55" name="color3">
+        </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Palette Temperature:</legend>
+
+          <div class="field">
+            <label for="cool">Cool</label>
+            <input id="cool" type="radio" name="temperature" value="cool">
+          </div>
+
+          <div class="field">
+            <label for="neutral">Neutral</label>
+            <input id="neutral" type="radio" name="temperature" value="neutral" checked>
+          </div>
+
+          <div class="field">
+            <label for="warm">Warm</label>
+            <input id="warm" type="radio" name="temperature" value="warm">
+          </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+
+      <h2>Palettes</h2>
+      <section>
+        <ul>
+          
+        </ul>
+      </section>
+    </main>
+   
+  </body>
+</html>

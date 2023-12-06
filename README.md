@@ -230,17 +230,17 @@ And don't forget that users need some confirmation of a copy, so alter the butto
 In order to see how well you're doing with this project, here are all the things we need would like to see from you. If you get all of these, then you know that you're where you need to be!
 
 ## Layout: Structure
-- [ ] There is a single `main` element on the page
-- [ ] There is a single `h1` element on the page
-- [ ] There is a `form`
-- [ ] The form has an `h2` label
-- [ ] The form has an `text` input and label for the palette title
-- [ ] The form has 3 `color` type inputs and labels for the color inputs
-- [ ] The form has a `fieldset` with a `legend` for the temperature setting
-- [ ] The form has 3 `radio` inputs and `labels` for the temperature setting
-- [ ] The form has `neutral` as the default temperature setting
-- [ ] The form has a `button` to submit the form
-- [ ] There is an `h2` showing the palettes section
+- [x] There is a single `main` element on the page
+- [x] There is a single `h1` element on the page
+- [x] There is a `form`
+- [x] The form has an `h2` label
+- [x] The form has an `text` input and label for the palette title
+- [x] The form has 3 `color` type inputs and labels for the color inputs
+- [x] The form has a `fieldset` with a `legend` for the temperature setting
+- [x] The form has 3 `radio` inputs and `labels` for the temperature setting
+- [x] The form has `neutral` as the default temperature setting
+- [x] The form has a `button` to submit the form
+- [x] There is an `h2` showing the palettes section
 - [ ] There is a `section` for the palettes
 - [ ] The page has a `ul` and `li` items that show each palette
 - [ ] Each palette has the 3 colors clearly visible somehow
@@ -273,7 +273,7 @@ In order to see how well you're doing with this project, here are all the things
 - [ ] A user's palettes are saved to localStorage
 
 ## Meta
-- [ ] The project is created using Vite
+- [x] The project is created using Vite
 - [ ] The code exists in more than one JS file
 - [ ] The project is deployed via GitHub Pages properly
 - [ ] The `palettes.json` file is read properly
