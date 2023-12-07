@@ -230,33 +230,33 @@ And don't forget that users need some confirmation of a copy, so alter the butto
 In order to see how well you're doing with this project, here are all the things we need would like to see from you. If you get all of these, then you know that you're where you need to be!
 
 ## Layout: Structure
-- [x] There is a single `main` element on the page
-- [x] There is a single `h1` element on the page
-- [x] There is a `form`
-- [x] The form has an `h2` label
-- [x] The form has an `text` input and label for the palette title
-- [x] The form has 3 `color` type inputs and labels for the color inputs
-- [x] The form has a `fieldset` with a `legend` for the temperature setting
-- [x] The form has 3 `radio` inputs and `labels` for the temperature setting
-- [x] The form has `neutral` as the default temperature setting
-- [x] The form has a `button` to submit the form
-- [x] There is an `h2` showing the palettes section
-- [ ] There is a `section` for the palettes
-- [ ] The page has a `ul` and `li` items that show each palette
-- [ ] Each palette has the 3 colors clearly visible somehow
-- [ ] Each palette has white and black text overlaid on each of the colors
-- [ ] Each palette *somehow* has white and black border on each of the colors
-- [ ] Each palette has 3 copy buttons that show the name of the color they *would* copy
-- [ ] Each palette has a delete button
-- [ ] Each palette has a banner along the bottom with the name of the temperature
-- [ ] Each palette has a banner along the bottom that is colored by the temperature
-  - (gray = neutral, red = warm, blue = cool)
+- [x] ~~There is a single `main` element on the page~~
+- [x] ~~There is a single `h1` element on the page~~
+- [x] ~~There is a `form`~~
+- [x] ~~The form has an `h2` label~~
+- [x] ~~The form has an `text` input and label for the palette title~~
+- [x] ~~The form has 3 `color` type inputs and labels for the color inputs~~
+- [x] ~~The form has a `fieldset` with a `legend` for the temperature setting~~
+- [x] ~~The form has 3 `radio` inputs and `labels` for the temperature setting~~
+- [x] ~~The form has `neutral` as the default temperature setting~~
+- [x] ~~The form has a `button` to submit the form~~
+- [x] ~~There is an `h2` showing the palettes section~~
+- [x] ~~There is a `section` for the palettes~~
+- [x] ~~The page has a `ul` and `li` items that show each palette~~
+- [x] ~~Each palette has the 3 colors clearly visible somehow~~
+- [x] ~~Each palette has white and black text overlaid on each of the colors~~
+- [x] ~~Each palette *somehow* has white and black border on each of the colors~~
+- [x] ~~Each palette has 3 copy buttons that show the name of the color they *would* copy~~
+- [x] ~~Each palette has a delete button~~
+- [x] ~~Each palette has a banner along the bottom with the name of the temperature~~
+- [X] ~~Each palette has a banner along the bottom that is colored by the temperature~~
+  - ~~(gray = neutral, red = warm, blue = cool)~~
 - [ ] Palettes appear next to each other in a grid-like pattern (flex or grid presentations fine)
 
 ## layout: Accessibility
-- [ ] The form has an `aria-label` or `aria-labelledby` attribute that describes the form
-- [ ] The section has an `aria-label` or `aria-labelledby` attribute that describes the section
-- [ ] There are no instances of recreating any semantic elements
+- [x] ~~The form has an `aria-label` or `aria-labelledby` attribute that describes the form~~
+- [x] ~~The section has an `aria-label` or `aria-labelledby` attribute that describes the section~~
+- [?hopefully] There are no instances of recreating any semantic elements
 
 ## Functionality
 - [ ] The title is a `required` field, and the form cannot be submitted without it
@@ -273,7 +273,7 @@ In order to see how well you're doing with this project, here are all the things
 - [ ] A user's palettes are saved to localStorage
 
 ## Meta
-- [x] The project is created using Vite
+- [x] ~~The project is created using Vite~~
 - [ ] The code exists in more than one JS file
 - [ ] The project is deployed via GitHub Pages properly
 - [ ] The `palettes.json` file is read properly
