@@ -2,44 +2,99 @@ import './style.css';
 import { v4 as uuidv4 } from 'uuid';
 import palettes from '../palettes.json';
 
-const unknown = () => {
-  for (const palette of palettes) {
-   
-  }
+//misc.
+const create = (str) => document.createElement(`${str}`)
+
+const paletteTemp = (temp) => {
+  if (temp === 'neutral') return '#8c8c8c'
+  if (temp === 'warm') return '#bc3925'
+  return '#2369c4'
 }
 
-const createPaletteCard = (palette) => {
-  const div = document.createElement('div')
-  div.className = 'palette'
-  // const li = document.createElement('li')
-  const p1 = document.createElement('p')
-  const p2 =  document.createElement('p')
-  console.log(palette)
-  p1.textContent = palette.colors
-  p2.textContent = palette.temperature
-  document.body.append(div)
-  div.append(p1, p2)
-  
-}
-//for each palette obj in the arr
-//add it as an li to the ul
-const showPalettes = () => {
-  //append palettes...
-  for (const palette of palettes) {
-    createPaletteCard(palette)
-  }
-}
-
-
-const showDefaultPalettes = () => {
-  //maybe make a backup file is the palette length is 0?
-}
-const main = () => {
-  const newEl = document.createElement('p')
-  newEl.textContent = JSON.stringify(palettes)
-  document.body.append(newEl)
-  console.log(palettes)
-  showPalettes()
+//for createPaletteCard
+const addTitle = (name) => {
+  const title = create('h3');
+  title.textContent = name;
+  return title;
 };
 
-main()
+const insertColor = (color) => {
+  const colorPreview = create('div');
+  colorPreview.style.backgroundColor = color;
+  colorPreview.className = 'color-preview';
+
+  const sample = create('p');
+  sample.textContent = 'Sample';
+  colorPreview.append(sample);
+
+  const textStr = create('span');
+  textStr.textContent = ' Text';
+  textStr.className = 'text-string';
+  sample.append(textStr);
+
+  return colorPreview;
+};
+
+const allowCopy = (color) => {
+  const button = create('button');
+  button.className = 'copy-button';
+  button.textContent = `Copy ${color}`;
+  return button;
+};
+
+const addDelete = () => {
+  const button = create('button')
+  button.textContent = 'Delete'
+  return button
+}
+
+const addTemp = (tone) => {
+  const temp = create('div');
+  temp.style.backgroundColor = (paletteTemp(tone));
+  const tempText = create('p');
+  tempText.textContent = tone;
+  temp.append(tempText);
+  return temp;
+};
+
+//for showPalettes
+const createPaletteCard = (palette) => {
+  const div = create('div');
+  div.className = 'palette';
+  
+  div.append(addTitle(palette.title));
+  
+  for (const color of palette.colors) {
+    div.append(insertColor(color));
+    div.append(allowCopy(color))
+  };
+
+//delete button
+  div.append(addDelete())
+  div.append(addTemp(palette.temperature))
+  
+  return div;
+};
+  
+  //anything below needed by main 
+  
+const showPalettes = () => {
+  const paletteList = document.querySelector('#palette-list');
+  for (const palette of palettes) {
+    const card = create('li');
+    card.append(createPaletteCard(palette));
+    paletteList.append(card);
+  }
+};
+
+  // experimental
+  // a randomizer would be cool, both colors and names
+const showDefaultPalettes = () => {
+  //maybe make a backup file is the palette length is 0?
+};
+
+const main = () => {
+  showPalettes();
+};
+
+main();

@@ -14,8 +14,27 @@
 }
 
 .palette {
-  border: 10px white;
-  background-color: #535bf2;
+  /* border:#ffffff solid 10px; */
+  background-color: #7174a4;
+  width: 30%;
+  text-align: center;
+}
+
+.color-preview {
+  width: 50%;
+  border: black solid 10px;
+  border-color: white white black black;
+  margin: auto;
+  /* margin-bottom: .5rem; */
+  text-align: center;
+}
+
+.text-string {
+  color: #000;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
