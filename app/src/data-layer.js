@@ -15,3 +15,8 @@ setLocalStorageKey('nums', [1, 2, 3])
 const storedArr = getLocalStorageKey('nums');
 
 console.log(storedArr); // [1, 2, 3]
+
+// const getPalette = () => getLocalStorageKey
+const setPalette = () => setLocalStorageKey()
+
+export { setLocalStorageKey, getLocalStorageKey}

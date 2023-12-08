@@ -5,6 +5,7 @@ import palettes from '../palettes.json';
 //misc.
 const create = (str) => document.createElement(`${str}`)
 
+
 const paletteTemp = (temp) => {
   if (temp === 'neutral') return '#8c8c8c'
   if (temp === 'warm') return '#bc3925'
@@ -97,3 +98,5 @@ const main = () => {
 };
 
 main();
+
+export {createPaletteCard}

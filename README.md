@@ -259,10 +259,10 @@ In order to see how well you're doing with this project, here are all the things
 - [?hopefully] There are no instances of recreating any semantic elements
 
 ## Functionality
-- [ ] The title is a `required` field, and the form cannot be submitted without it
-- [ ] Clicking the form submit button does not reload the page because the default behavior is prevented
+- [x] ~~The title is a `required` field, and the form cannot be submitted without it~~
+- [x] ~~Clicking the form submit button does not reload the page because the default behavior is prevented~~
 - [ ] Clicking the form submit button creates a new palette in the palettes section
-- [ ] Clicking the form submit button clears the form
+- [x] ~~Clicking the form submit button clears the form~~
 - [ ] Clicking one of the copy buttons copies the hex code of the color to the clipboard
 - [ ] Clicking the copy button copies the selected color to the user's clipboard
 - [ ] Clicking the copy button alters the text for a second to say "Copied hex!" for 1 second before switching back
