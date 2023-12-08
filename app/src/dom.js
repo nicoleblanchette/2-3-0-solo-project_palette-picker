@@ -2,6 +2,7 @@ import './style.css';
 import { v4 as uuidv4 } from 'uuid';
 import palettes from '../palettes.json';
 
+const paletteList = document.querySelector('#palette-list');
 //misc.
 const create = (str) => document.createElement(`${str}`)
 
@@ -39,12 +40,16 @@ const insertColor = (color) => {
 const allowCopy = (color) => {
   const button = create('button');
   button.className = 'copy-button';
+  button.type = 'button'
   button.textContent = `Copy ${color}`;
+  button.dataset.color = color
   return button;
 };
 
 const addDelete = () => {
   const button = create('button')
+  button.className = 'delete'
+  button.type = 'button'
   button.textContent = 'Delete'
   return button
 }
@@ -60,6 +65,9 @@ const addTemp = (tone) => {
 
 //for showPalettes
 const createPaletteCard = (palette) => {
+  const card = create('li');
+  card.className = 'card'
+  card.id = palette.uuid
   const div = create('div');
   div.className = 'palette';
   
@@ -72,29 +80,24 @@ const createPaletteCard = (palette) => {
 
   div.append(addDelete())
   div.append(addTemp(palette.temperature))
-  
-  return div;
+
+  card.append(div)
+  paletteList.append(card);
 };
   
   //anything below needed by main 
   
-const showPalettes = () => {
-  const paletteList = document.querySelector('#palette-list');
+const showDefaultPalettes = () => {
   for (const palette of palettes) {
-    const card = create('li');
-    card.append(createPaletteCard(palette));
-    paletteList.append(card);
+    createPaletteCard(palette);
   }
 };
 
   // experimental
   // a randomizer would be cool, both colors and names
-const showDefaultPalettes = () => {
-  //maybe make a backup file is the palette length is 0?
-};
 
 const main = () => {
-  showPalettes();
+  showDefaultPalettes();
 };
 
 main();

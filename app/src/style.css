@@ -13,11 +13,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#palette-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .palette {
   /* border:#ffffff solid 10px; */
   background-color: #7174a4;
   width: 30%;
   text-align: center;
+  min-width: 300px;
 }
 
 .color-preview {

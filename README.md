@@ -261,14 +261,14 @@ In order to see how well you're doing with this project, here are all the things
 ## Functionality
 - [x] ~~The title is a `required` field, and the form cannot be submitted without it~~
 - [x] ~~Clicking the form submit button does not reload the page because the default behavior is prevented~~
-- [ ] Clicking the form submit button creates a new palette in the palettes section
+- [x] ~~Clicking the form submit button creates a new palette in the palettes section~~
 - [x] ~~Clicking the form submit button clears the form~~
-- [ ] Clicking one of the copy buttons copies the hex code of the color to the clipboard
-- [ ] Clicking the copy button copies the selected color to the user's clipboard
-- [ ] Clicking the copy button alters the text for a second to say "Copied hex!" for 1 second before switching back
-- [ ] Clicking the delete button removes the palette from the page
+- [x] ~~Clicking one of the copy buttons copies the hex code of the color to the clipboard~~
+- [x] Clicking the copy button copies the selected color to the user's clipboard
+- [x] ~~Clicking the copy button alters the text for a second to say "Copied hex!" for 1 second before switching back~~
+- [x] ~~Clicking the delete button removes the palette from the page~~
 - [ ] Clicking the delete button removes the palette from localStorage (does not come back upon reload of page)
-- [ ] On first visit to the page, there are 3 default palettes
+- [] On first visit to the page, there are 3 default palettes
 - [ ] If a user deletes all their palettes, on next reload, the default palettes appear again
 - [ ] A user's palettes are saved to localStorage
 
@@ -277,8 +277,8 @@ In order to see how well you're doing with this project, here are all the things
 - [ ] The code exists in more than one JS file
 - [ ] The project is deployed via GitHub Pages properly
 - [ ] The `palettes.json` file is read properly
-- [ ] css flexbox or grid was used
-- [ ] The code does not render unescaped text directly to the DOM (createElement or other escape method used)
-- [ ] `.innerHTML` or `createElement/.append` is used properly at some point in the project
+- [x] ~~css flexbox or grid was used~~
+- [x] ~~The code does not render unescaped text directly to the DOM (createElement or other escape method used)~~
+- [x] ~~`.innerHTML` or `createElement/.append` is used properly at some point in the project~~
 - [ ] `.innerHTML` or `.remove()` is used to delete elements from the DOM.
 - [ ] The `setTimeout` method is used to rewrite the copy button text
