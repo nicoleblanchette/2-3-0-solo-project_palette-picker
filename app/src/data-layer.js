@@ -32,7 +32,7 @@ export const initPalettesIfEmpty = () => {
 
 export const restoreFromLocal = () => {
   try {
-    if (getPalettes().length > 1) {
+    if (getPalettes().length > 0) {
       for (const palette of getPalettes()) {
         createPaletteCard(palette);
         console.log('hello?');
