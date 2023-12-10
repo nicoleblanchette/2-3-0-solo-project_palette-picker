@@ -18,6 +18,8 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   text-align: center;
+  font-family: 'Comic Sans MS';
+
 }
 
 main {
@@ -28,9 +30,11 @@ display: flex;
   position: sticky;
   top: 20px;
   min-width: 300px;
-  background-color: #535bf2;
+  background-color: #535bf2b4;
   max-height: 27.5rem;
   border-radius: 14px;
+  display: flex;
+  flex-direction: column;
 }
 
 #title-field {
@@ -38,11 +42,14 @@ display: flex;
 }
 
 fieldset{
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 button {
   margin: auto;
+  margin-bottom: 10px;
 }
 
 #palette-list {
@@ -55,22 +62,46 @@ h2 {
   text-align: center;
 }
 
+section > h2 {
+  color: #f7f7f7;
+}
+.card {
+  min-width: 30%;
+  /* min-width: 300px; */
+}
 .palette {
   /* border:#ffffff solid 10px; */
-  background-color: #798ca7;
-  width: 30%;
+  background-color: #798ca7c1;
+  /* min-width: 50%; */
   text-align: center;
-  min-width: 300px;
+  /* min-width: 300px; */
   border-radius: 14px;
 }
 
+h3 {
+  padding-top: 10px;
+}
+
+#color-samples {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-bottom: 10px;
+}
+
 .color-preview {
-  width: 50%;
   border: black solid 10px;
   border-color: white white black black;
-  margin: auto;
+  margin-left: 10px;
   /* margin-bottom: .5rem; */
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.copy-button {
+  margin: 10px;
 }
 
 .text-string {
@@ -91,7 +122,8 @@ a:hover {
 }
 
 body {
-  margin: 50px;
+  /* margin: 50px; */
+  /* margin-left: 50px; */
  
   place-items: center;
   min-width: 320px;
@@ -110,6 +142,8 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+
+  text-align: center;
 }
 button:hover {
   border-color: #646cff;

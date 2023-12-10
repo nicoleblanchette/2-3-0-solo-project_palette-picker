@@ -70,10 +70,13 @@ export const createPaletteCard = (palette) => {
   
   div.append(addTitle(palette.title));
   
+  const colorSamples = create('div')
+  colorSamples.id = 'color-samples'
   for (const color of palette.colors) {
-    div.append(insertColor(color));
-    div.append(allowCopy(color))
+    colorSamples.append(insertColor(color));
+    colorSamples.append(allowCopy(color))
   };
+  div.append(colorSamples)
 
   div.append(addDelete())
   div.append(addTemp(palette.temperature))
