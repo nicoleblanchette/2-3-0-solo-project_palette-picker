@@ -251,7 +251,7 @@ In order to see how well you're doing with this project, here are all the things
 - [x] ~~Each palette has a banner along the bottom with the name of the temperature~~
 - [X] ~~Each palette has a banner along the bottom that is colored by the temperature~~
   - ~~(gray = neutral, red = warm, blue = cool)~~
-- [ ] Palettes appear next to each other in a grid-like pattern (flex or grid presentations fine)
+- [x] ~~Palettes appear next to each other in a grid-like pattern (flex or grid presentations fine)~~
 
 ## layout: Accessibility
 - [x] ~~The form has an `aria-label` or `aria-labelledby` attribute that describes the form~~
@@ -267,18 +267,18 @@ In order to see how well you're doing with this project, here are all the things
 - [x] Clicking the copy button copies the selected color to the user's clipboard
 - [x] ~~Clicking the copy button alters the text for a second to say "Copied hex!" for 1 second before switching back~~
 - [x] ~~Clicking the delete button removes the palette from the page~~
-- [ ] Clicking the delete button removes the palette from localStorage (does not come back upon reload of page)
-- [] On first visit to the page, there are 3 default palettes
-- [ ] If a user deletes all their palettes, on next reload, the default palettes appear again
-- [ ] A user's palettes are saved to localStorage
+- [x] ~~Clicking the delete button removes the palette from localStorage (does not come back upon reload of page)~~
+- [x] ~~On first visit to the page, there are 3 default palettes~~
+- [x] ~~If a user deletes all their palettes, on next reload, the default palettes appear again~~
+- [x] ~~A user's palettes are saved to localStorage~~
 
 ## Meta
 - [x] ~~The project is created using Vite~~
-- [ ] The code exists in more than one JS file
-- [ ] The project is deployed via GitHub Pages properly
-- [ ] The `palettes.json` file is read properly
+- [x] ~~The code exists in more than one JS file~~
+- [i tried :( ] The project is deployed via GitHub Pages properly
+- [x] ~~The `palettes.json` file is read properly~~
 - [x] ~~css flexbox or grid was used~~
 - [x] ~~The code does not render unescaped text directly to the DOM (createElement or other escape method used)~~
 - [x] ~~`.innerHTML` or `createElement/.append` is used properly at some point in the project~~
-- [ ] `.innerHTML` or `.remove()` is used to delete elements from the DOM.
-- [ ] The `setTimeout` method is used to rewrite the copy button text
+- [x] ~~`.innerHTML` or `.remove()` is used to delete elements from the DOM.~~
+- [x] ~~The `setTimeout` method is used to rewrite the copy button text~~

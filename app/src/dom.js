@@ -1,12 +1,8 @@
 import './style.css';
-import { v4 as uuidv4 } from 'uuid';
-import palettes from '../palettes.json';
-import { addPalette } from './data-layer';
 
 const paletteList = document.querySelector('#palette-list');
-//misc.
-const create = (str) => document.createElement(`${str}`)
 
+const create = (str) => document.createElement(`${str}`)
 
 const paletteTemp = (temp) => {
   if (temp === 'neutral') return '#8c8c8c'
@@ -64,7 +60,6 @@ const addTemp = (tone) => {
   return temp;
 };
 
-//for showPalettes
 export const createPaletteCard = (palette) => {
   const card = create('li');
   card.className = 'card'
@@ -84,24 +79,4 @@ export const createPaletteCard = (palette) => {
 
   card.append(div)
   paletteList.append(card);
-
-  // addPalette(palette)
 };
-  
-  //anything below needed by main 
-  
-// const showDefaultPalettes = () => {
-//   for (const palette of palettes) {
-//     createPaletteCard(palette);
-//   }
-// };
-
-  // experimental
-  // a randomizer would be cool, both colors and names
-
-const main = () => {
-  // showDefaultPalettes();
-};
-
-main();
-
