@@ -275,7 +275,7 @@ In order to see how well you're doing with this project, here are all the things
 ## Meta
 - [x] ~~The project is created using Vite~~
 - [x] ~~The code exists in more than one JS file~~
-- [i tried :( ] The project is deployed via GitHub Pages properly
+- [x] ~~The project is deployed via GitHub Pages properly~~
 - [x] ~~The `palettes.json` file is read properly~~
 - [x] ~~css flexbox or grid was used~~
 - [x] ~~The code does not render unescaped text directly to the DOM (createElement or other escape method used)~~

@@ -53,7 +53,8 @@ const addDelete = () => {
 
 const addTemp = (tone) => {
   const temp = create('div');
-  temp.style.backgroundColor = (paletteTemp(tone));
+  temp.style.backgroundColor = (paletteTemp(tone))
+  temp.style.borderRadius = '14px'
   const tempText = create('p');
   tempText.textContent = tone;
   temp.append(tempText);
