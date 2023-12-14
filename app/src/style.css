@@ -32,7 +32,8 @@ mark {
   padding: .5rem;
 }
 
-main { display: flex; }
+main { display: flex;
+justify-content: center; }
 
 #palette-form {
   position: sticky;
@@ -96,6 +97,7 @@ input[type="color" i] {
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 #palettes-plus-heading {
@@ -110,6 +112,8 @@ section > h2 { color: #f7f7f7; }
 ul { list-style: none; padding: 0; }
 
 .card {  min-width: 30%; }
+
+li {padding-left: 30px;}
 
 .palette {
   background-color: #798ca7c1;
@@ -202,4 +206,6 @@ form button:hover {
   #palette-form { position: static; }
 
   form > button { margin-top: 15px;}
+
+  li {padding-left: 0;}
 }
