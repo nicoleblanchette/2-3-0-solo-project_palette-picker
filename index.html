@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>Colorful Palettes</title>
-    <script type="module" crossorigin src="/2-3-0-solo-project_palette-picker/assets/index-Tcb5m8Pz.js"></script>
-    <link rel="stylesheet" crossorigin href="/2-3-0-solo-project_palette-picker/assets/index-2wGgmoRP.css">
+    <script type="module" crossorigin src="/2-3-0-solo-project_palette-picker/assets/index-x8ZAcv7v.js"></script>
+    <link rel="stylesheet" crossorigin href="/2-3-0-solo-project_palette-picker/assets/index-QCDuvE81.css">
   </head>
   <body>
     <header>
-    <h1>Colorful Palettes</h1>
+    <h1><mark>Colorful Palettes</mark></h1>
     </header>
     <main>
       <form id="palette-form" aria-labelledby="form-heading">
@@ -19,6 +19,7 @@
         <div class="field" id="title-field">
           <label for="palette-title">Palette Title:</label>
           <input id="palette-title" type="text" name="title" placeholder="Get creative!" required>
+          <button type="button" id="no-creativity">I'm not creative...</button>
         </div>
 
         <fieldset>
@@ -27,17 +28,22 @@
         <div class="field">
           <label for="color1">Color 1:</label>
           <input id="color1" type="color" value="#bada55" name="color1">
+          <button class="randomize" id="1" type="button">Random</button>
         </div>
 
         <div class="field">
           <label for="color2">Color 2:</label>
           <input id="color2" type="color" value="#bada55" name="color2">
+          <button class="randomize" id="2" type="button">Random</button>
         </div>
 
         <div class="field">
           <label for="color3">Color 3:</label>
           <input id="color3" type="color" value="#bada55" name="color3">
+          <button class="randomize" id="3" type="button">Random</button>
         </div>
+
+        <button id="randomize-all" type="button">Randomize All</button>
         </fieldset>
 
         <fieldset>
@@ -62,7 +68,7 @@
       </form>
 
       
-      <section aria-labelledby="palettes">
+      <section aria-labelledby="palettes" id="palettes-plus-heading">
         <h2 id="palettes">Palettes</h2>
         <ul id="palette-list">
         </ul>

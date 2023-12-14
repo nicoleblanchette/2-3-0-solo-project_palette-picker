@@ -12,6 +12,7 @@
     "vite": "^5.0.0"
   },
   "dependencies": {
+    "unique-names-generator": "^4.7.1",
     "uuid": "^9.0.1"
   }
 }
