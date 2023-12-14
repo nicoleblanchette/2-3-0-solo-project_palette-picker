@@ -18,8 +18,8 @@ const randomTitle = () => {
 
 const handleRandomTitle = () => {
   const title = document.querySelector('#palette-title');
-  title.value = randomTitle()
-}
+  title.value = randomTitle();
+};
 
 const randomColor = () => Math.floor(Math.random() * 16777215).toString(16);
 
@@ -30,8 +30,8 @@ const handleRandomColor = (e) => {
 
 const handleRandomAll = (e) => {
   const allColors = document.querySelectorAll('[type|=color]');
-  allColors.forEach((color) => color.value = '#' + randomColor())
-}
+  allColors.forEach((color) => color.value = '#' + randomColor());
+};
 
 const handleAddSubmit = (e) => {
   e.preventDefault();
@@ -79,9 +79,9 @@ const main = () => {
   document.querySelector('#palette-form').addEventListener('submit', handleAddSubmit);
   document.querySelector('#palette-list').addEventListener('click', handleCopy);
   document.querySelector('#palette-list').addEventListener('click', handleDelete);
-  document.querySelectorAll('.randomize').forEach((button) => button.addEventListener('click', handleRandomColor))
-  document.querySelector('#randomize-all').addEventListener('click', handleRandomAll)
-  document.querySelector('#no-creativity').addEventListener('click', handleRandomTitle)
+  document.querySelectorAll('.randomize').forEach((button) => button.addEventListener('click', handleRandomColor));
+  document.querySelector('#randomize-all').addEventListener('click', handleRandomAll);
+  document.querySelector('#no-creativity').addEventListener('click', handleRandomTitle);
 };
 
 main();

@@ -10,7 +10,6 @@ const paletteTemp = (temp) => {
   return '#00BFB2'
 }
 
-//for createPaletteCard
 const addTitle = (name) => {
   const title = create('h3');
   title.textContent = name;
@@ -44,12 +43,12 @@ const allowCopy = (color) => {
 };
 
 const addDelete = () => {
-  const button = create('button')
-  button.className = 'delete'
-  button.type = 'button'
-  button.textContent = 'Delete'
-  return button
-}
+  const button = create('button');
+  button.className = 'delete';
+  button.type = 'button';
+  button.textContent = 'Delete';
+  return button;
+};
 
 const addTemp = (tone) => {
   const temp = create('div');
@@ -62,25 +61,25 @@ const addTemp = (tone) => {
 
 export const createPaletteCard = (palette) => {
   const card = create('li');
-  card.className = 'card'
-  card.id = palette.uuid
+  card.className = 'card';
+  card.id = palette.uuid;
   const div = create('div');
   div.className = 'palette';
   
   div.append(addTitle(palette.title));
   
-  const colorSamples = create('div')
-  colorSamples.id = 'color-samples'
+  const colorSamples = create('div');
+  colorSamples.id = 'color-samples';
   for (const color of palette.colors) {
     colorSamples.append(insertColor(color));
-    colorSamples.append(allowCopy(color))
+    colorSamples.append(allowCopy(color));
   };
-  div.append(colorSamples)
+  div.append(colorSamples);
 
-  div.append(addDelete())
-  div.append(addTemp(palette.temperature))
-  div.classList.add(palette.temperature)
+  div.append(addDelete());
+  div.append(addTemp(palette.temperature));
+  div.classList.add(palette.temperature);
 
-  card.append(div)
+  card.append(div);
   paletteList.append(card);
 };
